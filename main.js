@@ -60,11 +60,11 @@ function addStar(){
 Array(600).fill().forEach(addStar);
 
 //Space background
-const spaceTexture=new THREE.TextureLoader().load('space.jpg');
+const spaceTexture=new THREE.TextureLoader().load('./space.jpg');
 scene.background=spaceTexture;
 
 //Cube with face on it on all faces
-const broTexture=new THREE.TextureLoader().load('bro.jpg');
+const broTexture=new THREE.TextureLoader().load('./bro.jpg');
 
 const bro=new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -74,8 +74,8 @@ const bro=new THREE.Mesh(
 scene.add(bro);
 
 //map->image on shape, normalmap->texture on shape
-const moonTexture=new THREE.TextureLoader().load('moon.jpg');
-const normalTexture=new THREE.TextureLoader().load('normal.jpg');
+const moonTexture=new THREE.TextureLoader().load('./moon.jpg');
+const normalTexture=new THREE.TextureLoader().load('./normal.jpg');
 const moon=new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({
